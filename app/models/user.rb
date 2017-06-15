@@ -17,8 +17,4 @@ class User < ActiveRecord::Base
 
   has_many :visited_urls, :through => :visits, :source => :visited_url
 
-  def self.find_by_email(email)
-    User.where("email = ?", email)
-  end
-
 end

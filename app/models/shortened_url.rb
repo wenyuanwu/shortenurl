@@ -47,8 +47,4 @@ class ShortenedUrl < ApplicationRecord
     end
   end
 
-  def self.find_by_short_url(short_url)
-    ShortenedUrl.where("short_url = ?", short_url)
-  end
-
 end
